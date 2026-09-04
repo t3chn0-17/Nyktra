@@ -46,8 +46,8 @@ Nyktra is designed to provide an experience similar to a graphical chat applicat
 ├──────────────────┬───────────────────────────────────────────┤
 │ Conversations    │  Alice                                    │
 │                  │                                           │
-│  ● Alice         │  Alice: Hey!                             │
-│  ○ Bob           │  You: Hey, what's up?                    │
+│  ● Alice         │  Alice: Hey!                              │
+│  ○ Bob           │  You: Hey, what's up?                     │
 │  ○ Charlie       │                                           │
 │                  │                                           │
 │                  │                                           │

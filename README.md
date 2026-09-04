@@ -129,7 +129,7 @@ This makes the application particularly suitable for users who enjoy:
 
 The project is actively evolving. Planned features may include:
 
-- [X] User authentication
+- [ ] User authentication
 - [ ] Real-time messaging
 - [ ] User presence / online status
 - [ ] Multiple conversations

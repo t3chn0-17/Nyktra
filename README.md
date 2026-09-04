@@ -186,11 +186,11 @@ I'm a Python developer interested in software development, networking, cybersecu
 
 ### Contact & Socials
 
-- 💬 **WhatsApp:** 				`t3chn0_17`
-- 🎵 **TikTok:** 				[@t3chn0_17](https://www.tiktok.com/@t3chn0_17)
-- 𝕏  **X:** 					[@t3chn0_17](https://www.x.com/t3chn0_17)
-- 🔗 **My Links:** 				[Gravatar](https://gravatar.com/candymindfully665cd5612c)
-- 💼 **Hire me on Fiverr:** 	[Fiverr](https://www.fiverr.com/sellers/abdo_essam_tech/)
+- 💬 **WhatsApp:** `t3chn0_17`
+- 🎵 **TikTok:** [@t3chn0_17](https://www.tiktok.com/@t3chn0_17)
+- 𝕏 **X:** [@t3chn0_17](https://www.x.com/t3chn0_17)
+- 🔗 **My Links:** [Gravatar](https://gravatar.com/candymindfully665cd5612c)
+- 💼 **Hire me on Fiverr:** [Fiverr](https://www.fiverr.com/sellers/abdo_essam_tech/)
 
 ---
 

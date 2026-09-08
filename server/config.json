@@ -1,0 +1,15 @@
+{
+	"server-name": "Nyktra",
+	"password-required": 1,
+
+	"addr": "127.0.0.1",
+	"port": 77666,
+
+	"users-limit": 6,
+
+	"log": {
+		"users": 1,
+		"messages": 0
+	},
+	"enable-client-log-access": 0
+}

@@ -2,6 +2,7 @@ import click
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
+from .tui import app
 
 console = Console()
 
@@ -64,8 +65,7 @@ def cli_args(): pass
 )
 def run(port):
   nor_print_version()
-  console.print("\n[bold green]\[+] Server is running")
-  console.print(f"[cyan]\[*] Listening on 127.0.0.1:{port}")
+  app.run()
 
 @cli_args.command(
   help="Configure the server settings to edit the config.json file"

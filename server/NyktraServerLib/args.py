@@ -2,11 +2,9 @@ import click
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
-from rich.table import Table
+# from rich.table import Table
 
-from .tui import app
-from .data import project_dir, Group, User
-from pathlib import Path
+from .ui import app
 
 console = Console()
 

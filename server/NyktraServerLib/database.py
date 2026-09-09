@@ -1,22 +1,36 @@
+# import asyncio
 import aiosqlite as sql
-import asyncio
-from dataclasses import dataclass, field
-from pathlib import Path
+from .global_data import databases_dir, Command
 
-project_dir = Path(__file__).resolve().parent.parent
+class DBController:
+  def __init__(
+      self, name: str, db_file_name: str,
+      db, connection_state: bool = False,
+    ):
+    self.name = name
+    self.db_file_name = db_file_name
+    self.db = db
+    self.connection_state = connection_state
 
+  @classmethod
+  async def connect(cls, name: str, db_file_name: str):
+    db = await sql.connect(f"{databases_dir}\\{db_file_name}")
+    return cls(
+      name, db_file_name, db, True
+    )
 
-class User:
-  name: str
-  username: str
-  password: None
+  async def execute(self, command: Command):
+    cursor = await self.db.execute(command.code)
 
-class Group:
-  name: str
-  password_required: bool = True
-  users_limit: int = 0
-  logged_in_users: list[User] = field(default_factory=list)
+    if command.return_value:
+      result = await cursor.fetchall()
+      await cursor.close()
+      return result
 
-async def add_user_db(user: User): pass
+    await self.db.commit()
+    await cursor.close()
 
-async def add_group_db(group: Group): pass
+  async def close(self):
+    if self.db:
+      await self.db.close()
+      self.connection_state = False

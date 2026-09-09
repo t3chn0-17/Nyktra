@@ -2,7 +2,11 @@ import click
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
+from rich.table import Table
+
 from .tui import app
+from .data import project_dir, Group, User
+from pathlib import Path
 
 console = Console()
 
@@ -72,7 +76,8 @@ def run(port):
 )
 @click.option(
   "-v", "--variable",
-  help="Specify a config variable to edit"
+  help="Specify a config variable to edit",
+  type=click.Tuple([str, str])
 )
 def config(variable):
   nor_print_version()
@@ -82,9 +87,15 @@ def config(variable):
     console.print(f"[green]\[+] Started config")
 
 @cli_args.command(
-  help="Add a group on the server"
+  help="Add a group to the server"
 )
-@click.argument("group_name")
-def add(group_name):
+@click.argument("name")
+def add_group(name):
   nor_print_version()
-  console.print(f"[green]\[+] Added as group: [purple]{group_name}[/purple]")
+
+@cli_args.command(
+  help="Add a user to the server and set their roles"
+)
+@click.argument("name")
+def add_user(name):
+  nor_print_version()

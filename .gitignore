@@ -2,9 +2,10 @@
 *.key
 *.env
 
-__pycache__
 Tasks.nyktra
-test
-server
-client
-Nyktra-CPP-V1
+
+__pycache__/
+test/
+server/
+client/
+Nyktra-CPP-V1/

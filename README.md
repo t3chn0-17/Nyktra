@@ -26,8 +26,9 @@ Built with Python and designed around an interactive terminal experience, Nyktra
 
 Nyktra is built around the following technologies:
 
-- **Python**
-- **Textual** — Terminal User Interface framework
+- **Python** — The main programming language in this project
+- **Curses** — Terminal User Interface library
+- **Click** — Handling command-line arguments
 - **Rich** — Rich terminal rendering
 - **AsyncIO** — Asynchronous programming and networking
 - **WebSockets** — Real-time communication

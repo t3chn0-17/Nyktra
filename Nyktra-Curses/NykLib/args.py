@@ -3,7 +3,7 @@ from rich.panel import Panel
 from rich.text import Text
 
 from .utils import dev_banner, print_version, get_local_ip
-from .config import console
+from .config import console, ensure_dirs
 
 @click.group()
 @click.option(
@@ -26,6 +26,7 @@ def cli_args(): pass
 )
 def run(port):
   dev_banner()
+  ensure_dirs()
   console.print(f"[green]\[+] Server running on 127.0.0.1:{port}")
   console.print(f"[blue]\[!] Access it on the LAN {get_local_ip()}:{port}")
   console.print("[blue]\[!] Press Enter to Start the TUI")

@@ -46,7 +46,3 @@ def get_local_ip():
   hostname = gethostname()
   local_ip = gethostbyname(hostname)
   return local_ip
-
-# def run_all():
-#   app = TUI()
-#   app.run()
